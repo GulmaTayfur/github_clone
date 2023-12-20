@@ -1,0 +1,131 @@
+.main {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+
+  &-about {
+    margin-top: 20px;
+
+    img {
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+    }
+    &-title {
+      margin-top: -5px;
+      text-align: start;
+
+      h3 {
+        padding-bottom: 10px;
+        margin-top: -5px;
+        margin-bottom: 1px;
+      }
+
+      h4 {
+        padding-bottom: 5px;
+        font-weight: lighter;
+        margin-top: -5px;
+        font-size: 18px;
+
+        color: gray;
+      }
+
+      button {
+        margin-top: 10px;
+        width: 100%;
+        height: 30px;
+        font-size: 14px;
+        color: rgb(20, 20, 20);
+        font-weight: bold;
+        border: 1px solid rgba(27, 31, 35, 0.2);
+        background: none;
+        background-color: #eff3f6;
+        background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
+        border-radius: 5px;
+      }
+    }
+  }
+  &-projects {
+    width: 100%;
+    margin-left: 40px;
+
+    &-links {
+      width: 70%;
+      margin-top: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      a {
+        color: #586069;
+      }
+
+      p {
+        margin-left: -30px;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(240, 230, 230);
+        border: 1px solid rgb(240, 230, 230);
+        border-radius: 50%;
+        display: inline-block;
+      }
+    }
+
+    .section {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        font-size: 12px;
+        color: #586069;
+      }
+    }
+
+    &-bar {
+      margin-top: 20px;
+      margin-right: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      width: 400px;
+      height: 100px;
+      position: relative;
+
+      .up {
+        display: flex;
+
+        .right {
+          svg {
+            position: absolute;
+            right: 10px;
+          }
+        }
+      }
+      .down {
+        margin-top: 40px;
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+
+        span {
+          background-color: #c6538c;
+          height: 12px;
+          width: 12px;
+          border-radius: 50%;
+          display: inline-block;
+        }
+
+        p {
+          font-size: 14px;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
+
+.main-projects-container {
+  display: flex;
+  flex-wrap: wrap;
+}
